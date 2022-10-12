@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <title>Formulario</title>
+   
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+        <div class="contact-container">
+        
+          <div class="left-col"></div>
+          <div class="right-col">
+            <h1>Realiza tu reserva</h1>
+
+        <form id="contact-form" method="post">
+
+        <label for="name">Nombre Completo</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Tu dirección de email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required />
+          
+        <label for="cantidad">Cantidad de Personas</label>
+        <input type="number" id="cantidad" name="cantidad" placeholder="0"required>
+         
+
+          <label for="actividad">Elegir actividad a reservar</label>
+          <select id="actividad" name="eleccion" required>
+              <option value="">Elegir de la lista</option>
+              <option value="restaurant">Restaurant</option>
+              <option value="cepa1">Cabagalta</option>
+              <option value="cepa1">Degustacion Cepa 1</option>
+              <option value="cepa2">Degutacuion Cepa 2</option>
+              <option value="cepa3">Degustacion Cepa 3</option>
+          </select>
+
+       
+          <div class="contenedor">
+          <label class="form-label" for="fecha">Fecha</label>
+          <input type="date" id="fecha" class="form-control" required/>
+     
+       
+          <label class="form-label" for="hora">Hora</label>
+          <input type="time" id="hora" class="form-control" required/>
+        </div>
+
+              <button type="submit" id="submit" name="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Reservar</button>
+              
+        </form>
+    
+</body>
+</html>
